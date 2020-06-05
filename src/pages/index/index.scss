@@ -1,0 +1,41 @@
+@import '../../styles/main.scss';
+
+.search_item {
+  padding: 10px 20px;
+  @include flex_column_row_center(space-between);
+
+  .location {
+    padding-right: 40px;
+    position: relative;
+    width: 115px;
+    text-align: center;
+    @include text-truncate;
+    &:after {
+      content: '';
+      width: 35px;
+      height: 20px;
+      background: url('../../public/images/arrow_down.png') no-repeat 100%;
+      @include position_margin_auto(10px, 0, 0, inherit, auto 0);
+    }
+  }
+
+  .search_ipt {
+    background-color: $color-bg-content;
+    padding: 20px 60px 20px 30px;
+    border-radius: 50px;
+    color: $color-text-primary-s;
+    position: relative;
+    &:after {
+      content: '';
+      width: 70px;
+      height: 70px;
+      background: url('../../public/images/search.png') no-repeat 100%;
+      @include position_margin_auto(0, 20px, 0, inherit, auto 0);
+    }
+  }
+
+  .search_placeholder {
+    color: $color-text-description;
+  }
+
+}

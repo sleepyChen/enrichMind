@@ -1,0 +1,30 @@
+{
+  "id": "1862385",
+  "name": "enrichMind",
+  "font_family": "enrichMind",
+  "css_prefix_text": "enrichMind-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7141595",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "6332450",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "569539",
+      "name": "movie",
+      "font_class": "caidanicondianyinghui",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    }
+  ]
+}

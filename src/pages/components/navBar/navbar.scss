@@ -1,0 +1,10 @@
+@import '../../../styles/main.scss';
+
+.navbar {
+  @include flex_column_row_center(inherit, center);
+  .back {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+  }
+}

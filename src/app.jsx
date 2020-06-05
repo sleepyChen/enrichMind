@@ -1,3 +1,4 @@
+/* eslint-disable react/sort-comp */
 import Taro, { Component } from '@tarojs/taro'
 import { Provider } from '@tarojs/mobx'
 import Index from './pages/index'
@@ -15,6 +16,10 @@ import './app.scss'
 const store = {
   counterStore
 }
+
+Taro.getSystemInfo({}).then(res => {
+  Taro.$navigationTop = res.statusBarHeight;
+})
 
 class App extends Component {
 
@@ -45,7 +50,8 @@ class App extends Component {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'black',
+      navigationStyle: 'custom'
     }
   }
 
@@ -65,7 +71,8 @@ class App extends Component {
         <Index />
       </Provider>
     )
-  }
+  } 
 }
 
 Taro.render(<App />, document.getElementById('app'))
+ 
